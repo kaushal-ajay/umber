@@ -1,0 +1,175 @@
+/* clearFix */
+/* Detect variable screen */
+#switcher .mCustomScrollbar {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#switcher .mCustomScrollBox, #switcher .mCSB_container {
+  overflow: visible;
+}
+
+#switcher .mCustomScrollBox, #switcher .mCSB_container {
+  overflow: visible;
+}
+
+#switcher .mCSB_scrollTools {
+  left: -20px;
+}
+
+#switcher {
+  color: #fff;
+  padding: 30px 10px;
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  font-size: 12px;
+  width: 300px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: -300px;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#switcher.show {
+  left: 300px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#switcher .sw-title {
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+#switcher .btn-buy {
+  color: #333;
+  background: #fff;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid transparent;
+}
+
+#switcher .btn-buy:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+#switcher span.switcher-cog {
+  position: absolute;
+  right: -30px;
+  top: 120px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+#switcher span.switcher-cog:after {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background: #333;
+  cursor: pointer;
+  content: "\f013";
+  font-family: "FontAwesome", serif;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+#switcher #tm-color {
+  padding: 0;
+  margin: 0;
+}
+
+#switcher #tm-color:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#switcher #tm-color li {
+  list-style: none;
+  display: inline-block;
+  width: 27px;
+  height: 25px;
+  margin: 0 2.5px 5px 2.5px;
+  background: #0C9;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  cursor: pointer;
+}
+
+
+#switcher .demo-homepage {
+  margin: 0;
+  padding: 0;
+}
+
+#switcher .demo-homepage:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#switcher .demo-homepage li {
+  display: inline-block;
+  float: left;
+  width: 46%;
+  margin: 2%;
+  position: relative;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+#switcher .demo-homepage li a {
+  display: block;
+  position: relative;
+}
+
+#switcher .demo-homepage li:hover .popup-demo-homepage {
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 1;
+  bottom: 60%;
+}
+
+#switcher .popup-demo-homepage {
+  display: block;
+  position: absolute;
+  left: 80%;
+  width: 460px;
+  bottom: 50%;
+  border: 5px solid #fff;
+  z-index: 999;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#switcher .demo-homepage li a img {
+  width: 100%;
+}
